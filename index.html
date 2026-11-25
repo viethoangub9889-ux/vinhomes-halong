@@ -132,12 +132,16 @@ footer{background:#1f171f;color:#bfaeb9;font-size:13px;padding:28px max(5vw,16px
 @media(max-width:720px){.hero .in{padding-bottom:96px}.hero{min-height:auto}.hero .in{padding-top:110px}}.facts span{white-space:nowrap;flex:none}.facts b{min-width:0}
 .dock{transition:transform .35s,opacity .35s}.dock.dock-hide{transform:translateY(130%);opacity:0;pointer-events:none}
 .js-share{font-family:inherit;cursor:pointer}.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:#1c2526;color:#fff;padding:12px 18px;border-radius:12px;font-size:14px;z-index:60;opacity:0;transition:opacity .3s;max-width:90vw;text-align:center}.toast.on{opacity:1}
+.gtabs{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0 18px}.gtabs button{font:inherit;font-size:14px;padding:8px 16px;border-radius:99px;border:1px solid var(--line);background:var(--card);color:var(--ink,#222);cursor:pointer}.gtabs button.on{background:var(--plum);border-color:var(--plum);color:#fff}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}.gi{position:relative;display:block;border-radius:14px;overflow:hidden;aspect-ratio:3/2;background:var(--line)}.gi img{width:100%;height:100%;object-fit:cover;transition:transform .5s}.gi:hover img{transform:scale(1.04)}.gi span{position:absolute;left:10px;top:10px;font-size:12px;padding:4px 10px;border-radius:99px;background:rgba(11,47,51,.72);color:#fff}.gi.hide{display:none}
+@media(max-width:720px){.gal{grid-template-columns:1fr 1fr;gap:8px}.gi span{font-size:10px;padding:3px 7px;left:6px;top:6px}}
+.lb{position:fixed;inset:0;z-index:99;background:rgba(5,15,17,.94);display:flex;align-items:center;justify-content:center}.lb[hidden]{display:none}.lb img{max-width:96vw;max-height:88vh;border-radius:8px}.lb button{position:absolute;background:rgba(255,255,255,.12);color:#fff;border:0;font-size:34px;width:52px;height:52px;border-radius:50%;cursor:pointer}.lbx{top:14px;right:14px}.lbp{left:10px;top:50%;transform:translateY(-50%)}.lbn{right:10px;top:50%;transform:translateY(-50%)}
 </style>
 </head>
 <body>
 <nav id="nav">
   <a class="logo" href="#top">VINHOMES</a>
-  <div class="links"><a href="#tongquan">Tổng quan</a><a href="#sanpham">Sản phẩm</a><a href="#tienich">Tiện ích</a><a href="#v360">360°</a></div>
+  <div class="links"><a href="#tongquan">Tổng quan</a><a href="#sanpham">Sản phẩm</a><a href="#phoicanh">Phối cảnh</a><a href="#tienich">Tiện ích</a><a href="#v360">360°</a></div>
   <a class="btn pri" href="#lienhe">Nhận bảng giá</a>
 </nav>
 
@@ -182,11 +186,21 @@ footer{background:#1f171f;color:#bfaeb9;font-size:13px;padding:28px max(5vw,16px
     <div class="kick rv">Sản phẩm kinh doanh</div>
     <h2 class="rv">Bốn dòng nhà thấp tầng</h2>
     <p class="lead rv">Diện tích, giá và chính sách từng dòng sản phẩm, nhắn tư vấn để nhận bảng hàng mới nhất.</p>
-    <div class="prods"><div class="card rv"><div class="ph"><img src="https://pub-ab7903723e3a478281ffe6804313332e.r2.dev/project-info/1793157766191_f922301f.webp" alt="Phối cảnh Liền kề Vinhomes Global Gate" loading="lazy"></div><div class="tx"><h3>Liền kề</h3></div></div><div class="card rv"><div class="ph"><img src="https://pub-ab7903723e3a478281ffe6804313332e.r2.dev/project-info/1793157773568_f5208419.webp" alt="Phối cảnh Đơn lập Vinhomes Global Gate" loading="lazy"></div><div class="tx"><h3>Đơn lập</h3></div></div><div class="card rv"><div class="ph"><img src="https://pub-ab7903723e3a478281ffe6804313332e.r2.dev/project-info/1793157781184_79d7668d.webp" alt="Phối cảnh Song lập Vinhomes Global Gate" loading="lazy"></div><div class="tx"><h3>Song lập</h3></div></div><div class="card rv"><div class="ph"><img src="https://pub-ab7903723e3a478281ffe6804313332e.r2.dev/project-info/1793157788296_496b9964.webp" alt="Phối cảnh Biệt thự biển Vinhomes Global Gate" loading="lazy"></div><div class="tx"><h3>Biệt thự biển</h3></div></div></div>
+    <div class="prods"><div class="card rv"><div class="ph"><img src="img/pc/lk-ch57-01-s.webp" alt="Phối cảnh Liền kề Vinhomes Global Gate" loading="lazy"></div><div class="tx"><h3>Liền kề</h3></div></div><div class="card rv"><div class="ph"><img src="img/pc/dl-ch55-s.webp" alt="Phối cảnh Đơn lập Vinhomes Global Gate" loading="lazy"></div><div class="tx"><h3>Đơn lập</h3></div></div><div class="card rv"><div class="ph"><img src="img/pc/sl-ch10-s.webp" alt="Phối cảnh Song lập Vinhomes Global Gate" loading="lazy"></div><div class="tx"><h3>Song lập</h3></div></div><div class="card rv"><div class="ph"><img src="https://pub-ab7903723e3a478281ffe6804313332e.r2.dev/project-info/1793157788296_496b9964.webp" alt="Phối cảnh Biệt thự biển Vinhomes Global Gate" loading="lazy"></div><div class="tx"><h3>Biệt thự biển</h3></div></div></div>
     <p class="note">Hình ảnh phối cảnh của chủ đầu tư, mang tính minh họa.</p>
   </div>
 </section>
 
+<section class="band" id="phoicanh">
+  <div class="wrap">
+    <div class="kick rv">Phối cảnh</div>
+    <h2 class="rv">Phối cảnh các mẫu nhà</h2>
+    <div class="gtabs rv"><button type="button" class="on" data-g="all">Tất cả</button><button type="button" data-g="lk">Liền kề</button><button type="button" data-g="sl">Song lập</button><button type="button" data-g="dl">Đơn lập</button><button type="button" data-g="btb">BTB</button></div>
+    <div class="gal"><a class="gi" data-g="lk" href="img/pc/lk-ch57-01.webp"><img src="img/pc/lk-ch57-01-s.webp" alt="Phối cảnh Liền kề CH57" loading="lazy"><span>Liền kề · CH57-01</span></a><a class="gi" data-g="lk" href="img/pc/lk-ch59-01.webp"><img src="img/pc/lk-ch59-01-s.webp" alt="Phối cảnh Liền kề CH59" loading="lazy"><span>Liền kề · CH59-01</span></a><a class="gi" data-g="lk" href="img/pc/lk-ch53-01.webp"><img src="img/pc/lk-ch53-01-s.webp" alt="Phối cảnh Liền kề CH53" loading="lazy"><span>Liền kề · CH53-01</span></a><a class="gi" data-g="lk" href="img/pc/lk-ch57-02.webp"><img src="img/pc/lk-ch57-02-s.webp" alt="Phối cảnh Liền kề CH57" loading="lazy"><span>Liền kề · CH57-02</span></a><a class="gi" data-g="lk" href="img/pc/lk-ch59-02.webp"><img src="img/pc/lk-ch59-02-s.webp" alt="Phối cảnh Liền kề CH59" loading="lazy"><span>Liền kề · CH59-02</span></a><a class="gi" data-g="lk" href="img/pc/lk-ch53-02.webp"><img src="img/pc/lk-ch53-02-s.webp" alt="Phối cảnh Liền kề CH53" loading="lazy"><span>Liền kề · CH53-02</span></a><a class="gi" data-g="lk" href="img/pc/lk-ch18-02.webp"><img src="img/pc/lk-ch18-02-s.webp" alt="Phối cảnh Liền kề CH18" loading="lazy"><span>Liền kề · CH18-02</span></a><a class="gi" data-g="sl" href="img/pc/sl-ch10.webp"><img src="img/pc/sl-ch10-s.webp" alt="Phối cảnh Song lập CH10" loading="lazy"><span>Song lập · CH10</span></a><a class="gi" data-g="sl" href="img/pc/sl-ch03.webp"><img src="img/pc/sl-ch03-s.webp" alt="Phối cảnh Song lập CH03" loading="lazy"><span>Song lập · CH03</span></a><a class="gi" data-g="sl" href="img/pc/sl-ch55.webp"><img src="img/pc/sl-ch55-s.webp" alt="Phối cảnh Song lập CH55" loading="lazy"><span>Song lập · CH55</span></a><a class="gi" data-g="sl" href="img/pc/sl-ch53.webp"><img src="img/pc/sl-ch53-s.webp" alt="Phối cảnh Song lập CH53" loading="lazy"><span>Song lập · CH53</span></a><a class="gi" data-g="dl" href="img/pc/dl-ch10.webp"><img src="img/pc/dl-ch10-s.webp" alt="Phối cảnh Đơn lập CH10" loading="lazy"><span>Đơn lập · CH10</span></a><a class="gi" data-g="dl" href="img/pc/dl-ch55.webp"><img src="img/pc/dl-ch55-s.webp" alt="Phối cảnh Đơn lập CH55" loading="lazy"><span>Đơn lập · CH55</span></a><a class="gi" data-g="dl" href="img/pc/dl-ch51.webp"><img src="img/pc/dl-ch51-s.webp" alt="Phối cảnh Đơn lập CH51" loading="lazy"><span>Đơn lập · CH51</span></a><a class="gi" data-g="dl" href="img/pc/dl-ch52.webp"><img src="img/pc/dl-ch52-s.webp" alt="Phối cảnh Đơn lập CH52" loading="lazy"><span>Đơn lập · CH52</span></a><a class="gi" data-g="btb" href="img/pc/btb-ch73.webp"><img src="img/pc/btb-ch73-s.webp" alt="Phối cảnh BTB CH73" loading="lazy"><span>BTB · CH73</span></a></div>
+    <p class="note">Hình ảnh phối cảnh của chủ đầu tư, chỉ mang tính minh họa, tham khảo. Bấm vào ảnh để xem cỡ lớn.</p>
+  </div>
+</section>
+<div class="lb" id="lb" hidden><img alt=""><button type="button" class="lbx" aria-label="Đóng">×</button><button type="button" class="lbp" aria-label="Ảnh trước">‹</button><button type="button" class="lbn" aria-label="Ảnh sau">›</button></div>
 <section class="band dark" id="tienich">
   <div class="wrap">
     <div class="kick rv">Tiện ích nổi bật</div>
@@ -206,7 +220,7 @@ footer{background:#1f171f;color:#bfaeb9;font-size:13px;padding:28px max(5vw,16px
 
 <section class="band dark" id="lienhe">
   <div class="wrap contact">
-    <div class="ph rv" style="aspect-ratio:16/11"><img src="https://pub-ab7903723e3a478281ffe6804313332e.r2.dev/project-info/1793157773568_f5208419.webp" alt="Biệt thự Vinhomes Global Gate Hạ Long" loading="lazy"></div>
+    <div class="ph rv" style="aspect-ratio:16/11"><img src="img/pc/dl-ch10-s.webp" alt="Biệt thự Vinhomes Global Gate Hạ Long" loading="lazy"></div>
     <div class="rv">
       <div class="kick">Tư vấn &amp; bảng giá</div>
       <h2>Nhận bảng giá và quỹ căn còn trống</h2>
@@ -251,5 +265,12 @@ document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 </script>
 <script>{const d=document.querySelector(".dock"),h=document.querySelector(".hero");if(d&&h){const f=()=>d.classList.toggle("dock-hide",scrollY<h.offsetHeight-innerHeight*0.6);addEventListener("scroll",f,{passive:true});addEventListener("resize",f);f()}}</script>
 <script>{const T="Vinhomes Global Gate Hạ Long",X="Vinhomes Global Gate Hạ Long: đại đô thị 6.206 ha bên vịnh di sản, liền kề, đơn lập, song lập, biệt thự biển. Xem tổng quan, sản phẩm, tiện ích và quỹ căn 360°:";const toast=m=>{let t=document.querySelector(".toast");if(!t){t=document.createElement("div");t.className="toast";document.body.appendChild(t)}t.textContent=m;t.classList.add("on");clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove("on"),2600)};document.querySelectorAll(".js-share").forEach(b=>b.addEventListener("click",async()=>{const u=location.origin+location.pathname+location.search;if(navigator.share){try{await navigator.share({title:T,text:X,url:u});return}catch(e){if(e.name==="AbortError")return}}try{await navigator.clipboard.writeText(X+" "+u);toast("Đã sao chép link dự án, dán vào Zalo để gửi khách")}catch(e){prompt("Sao chép link này:",u)}}))}</script>
+<script>{const t=document.querySelectorAll(".gtabs button"),g=[...document.querySelectorAll(".gi")],lb=document.getElementById("lb"),li=lb.querySelector("img");let k=0;
+t.forEach(b=>b.onclick=()=>{t.forEach(x=>x.classList.toggle("on",x===b));g.forEach(a=>a.classList.toggle("hide",b.dataset.g!=="all"&&a.dataset.g!==b.dataset.g))});
+const vis=()=>g.filter(a=>!a.classList.contains("hide")),show=i=>{const v=vis();k=(i+v.length)%v.length;li.src=v[k].href;li.alt=v[k].querySelector("img").alt};
+g.forEach(a=>a.onclick=e=>{e.preventDefault();show(vis().indexOf(a));lb.hidden=false});
+lb.querySelector(".lbx").onclick=()=>lb.hidden=true;lb.querySelector(".lbp").onclick=()=>show(k-1);lb.querySelector(".lbn").onclick=()=>show(k+1);
+lb.onclick=e=>{if(e.target===lb)lb.hidden=true};addEventListener("keydown",e=>{if(lb.hidden)return;if(e.key==="Escape")lb.hidden=true;if(e.key==="ArrowLeft")show(k-1);if(e.key==="ArrowRight")show(k+1)});
+let x0=null;lb.addEventListener("touchstart",e=>x0=e.touches[0].clientX,{passive:true});lb.addEventListener("touchend",e=>{if(x0===null)return;const d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>40)show(k+(d<0?1:-1));x0=null})}</script>
 </body>
 </html>
