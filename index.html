@@ -131,6 +131,7 @@ footer{background:#1f171f;color:#bfaeb9;font-size:13px;padding:28px max(5vw,16px
 #tienich .amen figure{flex-basis:min(88vw,640px);aspect-ratio:auto}#tienich .amen img{aspect-ratio:1536/582;height:auto;object-fit:contain;background:#0b2f33;border-radius:14px}#tienich .amen figcaption{position:static;background:none;padding:10px 4px 0;color:#eef4f2}
 @media(max-width:720px){.hero .in{padding-bottom:96px}.hero{min-height:auto}.hero .in{padding-top:110px}}.facts span{white-space:nowrap;flex:none}.facts b{min-width:0}
 .dock{transition:transform .35s,opacity .35s}.dock.dock-hide{transform:translateY(130%);opacity:0;pointer-events:none}
+.js-share{font-family:inherit;cursor:pointer}.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:#1c2526;color:#fff;padding:12px 18px;border-radius:12px;font-size:14px;z-index:60;opacity:0;transition:opacity .3s;max-width:90vw;text-align:center}.toast.on{opacity:1}
 </style>
 </head>
 <body>
@@ -146,7 +147,7 @@ footer{background:#1f171f;color:#bfaeb9;font-size:13px;padding:28px max(5vw,16px
     <div class="kick">Hạ Long – Quảng Yên · Quảng Ninh</div>
     <h1>Vinhomes Global Gate, <em>thành phố kỳ quan</em> bên vịnh di sản</h1>
     <p class="sub">Đại đô thị phức hợp do Vinhomes phát triển, còn gọi là Vinhomes Hạ Long Xanh. Định hướng đô thị sinh thái, thông minh, bền vững.</p>
-    <div class="cta"><a class="btn light" href="#lienhe">Nhận bảng giá mới nhất</a><a class="btn ghost" href="#v360">Xem quỹ căn 360°</a></div>
+    <div class="cta"><a class="btn light" href="#lienhe">Nhận bảng giá mới nhất</a><a class="btn ghost" href="#v360">Xem quỹ căn 360°</a><button type="button" class="btn ghost js-share">↗ Chia sẻ dự án</button></div>
     <div class="stats">
       <div><b>6.206 ha</b><span>quy mô dự án</span></div>
       <div><b>380.000</b><span>quy mô dân số</span></div>
@@ -217,7 +218,7 @@ footer{background:#1f171f;color:#bfaeb9;font-size:13px;padding:28px max(5vw,16px
         <div><span>Dự án</span><b>Vinhomes Global Gate Hạ Long</b></div>
         <div><span>Chủ đầu tư</span><b>Vinhomes</b></div>
       </div>
-      <div class="cta"><a class="btn light js-tel" href="tel:0829980198">Gọi tư vấn</a><a class="btn zalo js-zalo" href="https://zalo.me/0829980198">Chat Zalo</a><a class="btn ghost" href="https://vhub.com.vn/du-an/vinhomes-global-gate-ha-long/tong-quan" target="_blank" rel="noopener">VHub Vinhomes</a></div>
+      <div class="cta"><a class="btn light js-tel" href="tel:0829980198">Gọi tư vấn</a><a class="btn zalo js-zalo" href="https://zalo.me/0829980198">Chat Zalo</a><a class="btn ghost" href="https://vhub.com.vn/du-an/vinhomes-global-gate-ha-long/tong-quan" target="_blank" rel="noopener">VHub Vinhomes</a><button type="button" class="btn ghost js-share">↗ Chia sẻ dự án</button></div>
     </div>
   </div>
 </section>
@@ -249,5 +250,6 @@ document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 }
 </script>
 <script>{const d=document.querySelector(".dock"),h=document.querySelector(".hero");if(d&&h){const f=()=>d.classList.toggle("dock-hide",scrollY<h.offsetHeight-innerHeight*0.6);addEventListener("scroll",f,{passive:true});addEventListener("resize",f);f()}}</script>
+<script>{const T="Vinhomes Global Gate Hạ Long",X="Vinhomes Global Gate Hạ Long: đại đô thị 6.206 ha bên vịnh di sản, liền kề, đơn lập, song lập, biệt thự biển. Xem tổng quan, sản phẩm, tiện ích và quỹ căn 360°:";const toast=m=>{let t=document.querySelector(".toast");if(!t){t=document.createElement("div");t.className="toast";document.body.appendChild(t)}t.textContent=m;t.classList.add("on");clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove("on"),2600)};document.querySelectorAll(".js-share").forEach(b=>b.addEventListener("click",async()=>{const u=location.origin+location.pathname+location.search;if(navigator.share){try{await navigator.share({title:T,text:X,url:u});return}catch(e){if(e.name==="AbortError")return}}try{await navigator.clipboard.writeText(X+" "+u);toast("Đã sao chép link dự án, dán vào Zalo để gửi khách")}catch(e){prompt("Sao chép link này:",u)}}))}</script>
 </body>
 </html>
