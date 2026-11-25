@@ -136,12 +136,15 @@ footer{background:#1f171f;color:#bfaeb9;font-size:13px;padding:28px max(5vw,16px
 .gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}.gi{position:relative;display:block;border-radius:14px;overflow:hidden;aspect-ratio:3/2;background:var(--line)}.gi img{width:100%;height:100%;object-fit:cover;transition:transform .5s}.gi:hover img{transform:scale(1.04)}.gi span{position:absolute;left:10px;top:10px;font-size:12px;padding:4px 10px;border-radius:99px;background:rgba(11,47,51,.72);color:#fff}.gi.hide{display:none}
 @media(max-width:720px){.gal{grid-template-columns:1fr 1fr;gap:8px}.gi span{font-size:10px;padding:3px 7px;left:6px;top:6px}}
 .lb{position:fixed;inset:0;z-index:99;background:rgba(5,15,17,.94);display:flex;align-items:center;justify-content:center}.lb[hidden]{display:none}.lb img{max-width:96vw;max-height:88vh;border-radius:8px}.lb button{position:absolute;background:rgba(255,255,255,.12);color:#fff;border:0;font-size:34px;width:52px;height:52px;border-radius:50%;cursor:pointer}.lbx{top:14px;right:14px}.lbp{left:10px;top:50%;transform:translateY(-50%)}.lbn{right:10px;top:50%;transform:translateY(-50%)}
+.tgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:24px}.tgrid div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 16px;text-align:center}.tgrid b{display:block;font-size:34px;color:var(--plum);font-weight:600}.tgrid span{font-size:14px;color:var(--mute)}
+.mapimg{display:block;aspect-ratio:auto;margin-top:22px}.mapimg img{height:auto}
+@media(max-width:720px){.tgrid{grid-template-columns:1fr 1fr}.tgrid b{font-size:28px}}
 </style>
 </head>
 <body>
 <nav id="nav">
   <a class="logo" href="#top">VINHOMES</a>
-  <div class="links"><a href="#tongquan">Tổng quan</a><a href="#sanpham">Sản phẩm</a><a href="#phoicanh">Phối cảnh</a><a href="#tienich">Tiện ích</a><a href="#v360">360°</a></div>
+  <div class="links"><a href="#tongquan">Tổng quan</a><a href="#vitri">Vị trí</a><a href="#sanpham">Sản phẩm</a><a href="#phoicanh">Phối cảnh</a><a href="#tienich">Tiện ích</a><a href="#v360">360°</a></div>
   <a class="btn pri" href="#lienhe">Nhận bảng giá</a>
 </nav>
 
@@ -181,13 +184,28 @@ footer{background:#1f171f;color:#bfaeb9;font-size:13px;padding:28px max(5vw,16px
   </div>
 </section>
 
+<section class="band" id="vitri">
+  <div class="wrap">
+    <div class="kick rv">Vị trí</div>
+    <h2 class="rv">Kết nối nhanh tới các trung tâm</h2>
+    <div class="tgrid rv">
+      <div><b>15′</b><span>Trung tâm TP Hạ Long</span></div>
+      <div><b>40′</b><span>Hải Phòng</span></div>
+      <div><b>90′</b><span>Hà Nội</span></div>
+      <div><b>1h50′</b><span>Móng Cái</span></div>
+    </div>
+    <p class="lead rv" style="margin-top:18px">Nằm cạnh ga Hạ Long trên tuyến đường sắt tốc độ cao Hà Nội – Quảng Ninh (tương lai, bản đồ CĐT ghi 23′), gần cao tốc Hà Nội – Hải Phòng – Hạ Long và cao tốc Hạ Long – Vân Đồn – Móng Cái.</p>
+    <a class="ph rv mapimg" href="img/ban-do-vi-tri.webp" target="_blank" rel="noopener"><img src="img/ban-do-vi-tri.webp" alt="Bản đồ vị trí Vinhomes Global Gate Hạ Long" loading="lazy"></a>
+    <p class="note">Thời gian di chuyển bằng ô tô theo bản đồ vị trí của CĐT trên VHub. Bấm vào bản đồ để xem cỡ lớn.</p>
+  </div>
+</section>
 <section class="band" id="sanpham">
   <div class="wrap">
     <div class="kick rv">Sản phẩm kinh doanh</div>
     <h2 class="rv">Bốn dòng nhà thấp tầng</h2>
     <p class="lead rv">Diện tích, giá và chính sách từng dòng sản phẩm, nhắn tư vấn để nhận bảng hàng mới nhất.</p>
-    <div class="prods"><div class="card rv"><div class="ph"><img src="img/pc/lk-ch57-01-s.webp" alt="Phối cảnh Liền kề Vinhomes Global Gate" loading="lazy"></div><div class="tx"><h3>Liền kề</h3></div></div><div class="card rv"><div class="ph"><img src="img/pc/dl-ch55-s.webp" alt="Phối cảnh Đơn lập Vinhomes Global Gate" loading="lazy"></div><div class="tx"><h3>Đơn lập</h3></div></div><div class="card rv"><div class="ph"><img src="img/pc/sl-ch10-s.webp" alt="Phối cảnh Song lập Vinhomes Global Gate" loading="lazy"></div><div class="tx"><h3>Song lập</h3></div></div><div class="card rv"><div class="ph"><img src="https://pub-ab7903723e3a478281ffe6804313332e.r2.dev/project-info/1793157788296_496b9964.webp" alt="Phối cảnh Biệt thự biển Vinhomes Global Gate" loading="lazy"></div><div class="tx"><h3>Biệt thự biển</h3></div></div></div>
-    <p class="note">Hình ảnh phối cảnh của chủ đầu tư, mang tính minh họa.</p>
+    <div class="prods"><div class="card rv"><div class="ph"><img src="img/pc/lk-ch57-01-s.webp" alt="Phối cảnh Liền kề Vinhomes Global Gate" loading="lazy"></div><div class="tx"><h3>Liền kề</h3><p>Đất 59 – 114,1 m² · Mặt tiền 5 – 6 m · 4 tầng<br>Diện tích xây dựng 145,8 – 313,6 m²</p></div></div><div class="card rv"><div class="ph"><img src="img/pc/dl-ch55-s.webp" alt="Phối cảnh Đơn lập Vinhomes Global Gate" loading="lazy"></div><div class="tx"><h3>Đơn lập</h3><p>Đất 253,8 – 305,9 m²<br>Diện tích xây dựng 361,4 – 464,9 m²</p></div></div><div class="card rv"><div class="ph"><img src="img/pc/sl-ch10-s.webp" alt="Phối cảnh Song lập Vinhomes Global Gate" loading="lazy"></div><div class="tx"><h3>Song lập</h3><p>Đất 162 – 243,8 m² · Mặt tiền 7 – 9,1 m · 4 tầng<br>Diện tích xây dựng 322,2 – 538,6 m²</p></div></div><div class="card rv"><div class="ph"><img src="https://pub-ab7903723e3a478281ffe6804313332e.r2.dev/project-info/1793157788296_496b9964.webp" alt="Phối cảnh Biệt thự biển Vinhomes Global Gate" loading="lazy"></div><div class="tx"><h3>Biệt thự biển</h3><p>Mẫu BTB: mặt tiền 22,4 – 23,5 m · 3 tầng<br>Tổng diện tích sàn 974,6 – 1.062,4 m²</p></div></div></div>
+    <p class="note">Số liệu diện tích theo bảng hàng VHub ngày 25/11/2026 (các căn đang mở bán); mặt tiền, số tầng theo layout điển hình của CĐT trên VHub. Thông số từng căn có thể khác, nhắn tư vấn để nhận đúng căn. Hình ảnh mang tính minh họa.</p>
   </div>
 </section>
 
