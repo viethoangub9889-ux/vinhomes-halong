@@ -293,7 +293,7 @@ footer{background:#1f171f;color:#bfaeb9;font-size:13px;padding:28px max(5vw,16px
 
 <script>
 {
-const NS={hoang:['Việt Hoàng','0829980198','img/viet-hoang.webp'],duc:['Phạm Đức','0838011995'],long:['Việt Long','0353473733','img/viet-long.webp'],thaiha:['Thái Hà','0933161888','img/thai-ha.webp']};
+const NS={hoang:['Việt Hoàng','0829980198','img/viet-hoang.webp'],duc:['Phạm Đức','0838011995'],long:['Việt Long','0353473733','img/viet-long.webp'],thaiha:['Thái Hà','0933161888','img/thai-ha.webp'],tam:['Hoàng Tâm','0876605188','img/hoang-tam.webp']};
 const A=NS[(new URLSearchParams(location.search).get('ns')||'').toLowerCase()]||NS.hoang;
 const fmt=p=>p.replace(/^(\d{4})(\d{3})(\d{3})$/,'$1 $2 $3');
 document.querySelectorAll('.js-tel').forEach(a=>a.href='tel:'+A[1]);
